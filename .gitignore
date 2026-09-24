@@ -1,0 +1,44 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+/playwright-report
+/test-results
+
+# next.js
+/.next/
+/out/
+/build
+
+# local data and generated artifacts
+/data/*.db*
+/strix_runs/
+/.auth/
+
+# original high-resolution reels stay local; optimized derivatives live in public/media
+/media/reels/*.mp4
+
+# misc
+.DS_Store
+*.pem
+*.log
+
+# local deployment bundles
+/cleris-deploy.zip
+
+# environment and hosting
+.env*
+!.env.example
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
